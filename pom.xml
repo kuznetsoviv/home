@@ -12,6 +12,7 @@
 
   <modules>
     <module>zip-archive</module>
+    <module>date-time</module>
   </modules>
 
 
