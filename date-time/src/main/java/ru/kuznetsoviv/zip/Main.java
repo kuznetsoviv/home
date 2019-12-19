@@ -7,7 +7,7 @@ import java.util.TimeZone;
 public class Main {
 
     public static void main(String[] args) {
-        Calendar calendar = Calendar.getInstance(TimeZone.getTimeZone("Europe/London") , new Locale("en"));
+        Calendar calendar = Calendar.getInstance(TimeZone.getTimeZone("Europe/London"), new Locale("en"));
         System.out.println("Установка и получение времени:");
         //calendar.set(Calendar.HOUR_OF_DAY, 0);
         System.out.println(calendar.getTime());
