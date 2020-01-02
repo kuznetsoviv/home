@@ -1,4 +1,4 @@
-package ru.kuznetsoviv.zip;
+package ru.kuznetsoviv.datetime;
 
 import java.util.Calendar;
 import java.util.Locale;

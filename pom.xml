@@ -13,6 +13,7 @@
   <modules>
     <module>zip-archive</module>
     <module>date-time</module>
+    <module>parallel</module>
   </modules>
 
 
