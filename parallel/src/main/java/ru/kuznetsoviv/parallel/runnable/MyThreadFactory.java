@@ -1,4 +1,4 @@
-package ru.kuznetsoviv.parallel.thread;
+package ru.kuznetsoviv.parallel.runnable;
 
 import java.util.concurrent.ThreadFactory;
 
