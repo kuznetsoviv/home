@@ -1,4 +1,19 @@
 package ru.kuznetsoviv.parallel.readwritelock;
 
-public class Message {
+class Message {
+
+    private String message;
+
+    Message(String message) {
+        this.message = message;
+    }
+
+    void setMessage(String message) {
+        this.message = message;
+    }
+
+    String getMessage() {
+        return message;
+    }
+
 }
