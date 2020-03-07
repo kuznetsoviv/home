@@ -1,0 +1,6 @@
+ClassgetResourceExample1 obj = new ClassgetResourceExample1();
+Class class1 = obj.getClass();
+URL url = class1.getResource("ClassgetResourceExample1.java");
+System.out.println("Value URL = " + url);
+URL url2 = class1.getResource("file1.txt");
+System.out.println("Value URL = " + url2)

@@ -15,6 +15,7 @@
         <module>date-time</module>
         <module>parallel</module>
         <module>service-locator</module>
+        <module>nio</module>
     </modules>
 
 
