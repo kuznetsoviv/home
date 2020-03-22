@@ -1,4 +1,4 @@
-package file;
+package fileclassexample;
 
 import java.io.File;
 import java.util.Objects;
@@ -16,13 +16,19 @@ public class FileExample {
         System.out.println("file can write " + file.canWrite());
         System.out.println("file absolute path " + file.getAbsolutePath());
         // --------------------------------------------
+        // Переименовать файл или переместить файл
+        // file.renameTo(new File("<file path>/<file name>"));
+        // --------------------------------------------
         // Удалить файл при выходе из программы
         // file.deleteOnExit();
         // --------------------------------------------
         // Пример создания сразу списка директорий
         // File dirs = new File("5//6//f//3");
-        // dirs.mkdir();
+        // dirs.mkdirs();
         // --------------------------------------------
+        // Удаление файла - может удалить только файл или пустую директорию, для удаления всех директорий надо использовать
+        // рекурсивное удаление
+        // file.delete()
         System.out.println("Пример получения файлов из директроии: ");
         File currentFile = new File(".");
         Stream.of(Objects.requireNonNull(currentFile.list((dir, name) -> name.equals("pom.xml")))).forEach(System.out::println);

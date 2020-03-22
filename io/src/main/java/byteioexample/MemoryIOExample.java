@@ -1,4 +1,4 @@
-package memoryreadwriter;
+package byteioexample;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;

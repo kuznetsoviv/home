@@ -1,7 +1,10 @@
-package filereaderwriter;
+package fileioexample;
 
 import java.io.*;
 
+/**
+ * Пример использования файловых потоков для чтения/записи файлов.
+ */
 public class FileIOExample {
 
     public static void main(String[] args) {

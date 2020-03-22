@@ -16,6 +16,7 @@
         <module>parallel</module>
         <module>service-locator</module>
         <module>nio</module>
+        <module>io</module>
     </modules>
 
 
