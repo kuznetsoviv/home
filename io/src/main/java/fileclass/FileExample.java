@@ -1,4 +1,4 @@
-package fileclassexample;
+package fileclass;
 
 import java.io.File;
 import java.util.Objects;

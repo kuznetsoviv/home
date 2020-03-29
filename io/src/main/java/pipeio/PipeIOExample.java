@@ -1,4 +1,4 @@
-package pipeioexample;
+package pipeio;
 
 import java.io.IOException;
 import java.io.PipedInputStream;

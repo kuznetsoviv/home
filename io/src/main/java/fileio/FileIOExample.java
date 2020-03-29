@@ -1,4 +1,4 @@
-package fileioexample;
+package fileio;
 
 import java.io.*;
 

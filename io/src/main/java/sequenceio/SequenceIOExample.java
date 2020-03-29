@@ -1,4 +1,4 @@
-package sequenceioexample;
+package sequenceio;
 
 import java.io.*;
 import java.util.ArrayList;

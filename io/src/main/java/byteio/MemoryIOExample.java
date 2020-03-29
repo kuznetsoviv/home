@@ -1,4 +1,4 @@
-package byteioexample;
+package byteio;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
