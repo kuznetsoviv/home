@@ -4,7 +4,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>ru.kuznetsoviv.javawork</groupId>
-    <artifactId>root</artifactId>
+    <artifactId>workroot</artifactId>
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
     <name>Features</name>
@@ -17,6 +17,8 @@
         <module>nio</module>
         <module>io</module>
         <module>reflection</module>
+        <module>mxbean</module>
+        <module>gc</module>
     </modules>
 
     <build>

@@ -4,6 +4,8 @@ import ru.kuznetsoviv.service.api.HelloService;
 
 /**
  * Класс для запуска примеров.
+ * Сервис локатор используется в DriverManager для jdbc.
+ * SPI - service provider interface.
  */
 public class Main {
 
