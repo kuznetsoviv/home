@@ -1,4 +1,4 @@
-package fileclass;
+package ru.kuznetsoviv.fileclass;
 
 import java.io.File;
 import java.util.Objects;

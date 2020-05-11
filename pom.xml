@@ -19,6 +19,7 @@
         <module>reflection</module>
         <module>mxbean</module>
         <module>gc</module>
+        <module>net</module>
     </modules>
 
     <build>

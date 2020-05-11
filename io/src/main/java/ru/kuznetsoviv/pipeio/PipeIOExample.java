@@ -1,4 +1,4 @@
-package pipeio;
+package ru.kuznetsoviv.pipeio;
 
 import java.io.IOException;
 import java.io.PipedInputStream;

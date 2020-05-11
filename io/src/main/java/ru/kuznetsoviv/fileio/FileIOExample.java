@@ -1,4 +1,4 @@
-package fileio;
+package ru.kuznetsoviv.fileio;
 
 import java.io.*;
 

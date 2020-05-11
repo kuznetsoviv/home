@@ -1,4 +1,4 @@
-package stringtokenizer;
+package ru.kuznetsoviv.stringtokenizer;
 
 import java.io.IOException;
 import java.io.StreamTokenizer;

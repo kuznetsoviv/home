@@ -1,0 +1,11 @@
+IP - Internet Protocol - используется для взаимодействия между компьютерами
+
+TCP - Transmission Control Protocol
+    HTTP - SOAP, ReST
+    SMTP, FTP, SFTP, SLL/TSL
+UDP - User Datagram Protocol
+    SNMP - Simple Network Management Protocol (позволяеи опрашивать сетевые ресурсы)
+    Video
+    Audio
+
+Socket - IP + port (используется, чтобы определить какой программе отправить данные)

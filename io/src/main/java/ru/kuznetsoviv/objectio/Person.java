@@ -1,4 +1,4 @@
-package objectio;
+package ru.kuznetsoviv.objectio;
 
 import java.io.Serializable;
 

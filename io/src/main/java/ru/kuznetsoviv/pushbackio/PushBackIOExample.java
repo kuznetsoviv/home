@@ -1,4 +1,4 @@
-package pushbackio;
+package ru.kuznetsoviv.pushbackio;
 
 import java.io.BufferedReader;
 import java.io.FileReader;

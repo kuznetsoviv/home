@@ -1,4 +1,4 @@
-package printio;
+package ru.kuznetsoviv.printio;
 
 import java.io.FileOutputStream;
 import java.io.IOException;

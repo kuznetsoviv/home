@@ -1,4 +1,4 @@
-package byteio;
+package ru.kuznetsoviv.byteio;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;

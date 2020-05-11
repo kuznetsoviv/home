@@ -1,4 +1,4 @@
-package sequenceio;
+package ru.kuznetsoviv.sequenceio;
 
 import java.io.*;
 import java.util.ArrayList;
