@@ -20,6 +20,7 @@
         <module>mxbean</module>
         <module>gc</module>
         <module>net</module>
+        <module>drools</module>
     </modules>
 
     <build>
