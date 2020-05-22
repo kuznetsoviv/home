@@ -7,13 +7,13 @@ import java.util.List;
 
 public class GCExample {
 
-    private static List<Containere> objects = new ArrayList();
+    private static List<Container> objects = new ArrayList();
     private static boolean cont = true;
     private static String input;
     private static BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
+
     public static void main(String[] args) throws Exception {
         System.out.println("Welcome to Memory Tool!");
-
         while (cont) {
             System.out.println(
                     "\n\nI have " + objects.size() + " objects in use, about " +
@@ -29,14 +29,13 @@ public class GCExample {
                 if (input.startsWith("2")) removeObjects();
             }
         }
-
         System.out.println("Bye!");
     }
 
     private static void createObjects() {
         System.out.println("Creating objects...");
         for (int i = 0; i < 2; i++) {
-            objects.add(new Containere(new byte[10*1024*1024]));
+            objects.add(new Container(new byte[10 * 1024 * 1024]));
         }
     }
 

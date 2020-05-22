@@ -1,9 +1,9 @@
 package ru.kuznetsoviv.gc;
 
-public class Containere {
+public class Container {
     private byte[] objects;
 
-    public Containere(byte[] objects) {
+    public Container(byte[] objects) {
         this.objects = objects;
     }
 
