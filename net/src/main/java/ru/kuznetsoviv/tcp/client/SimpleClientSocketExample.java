@@ -1,13 +1,18 @@
-package ru.kuznetsoviv;
+package ru.kuznetsoviv.client;
 
 import java.io.*;
 import java.net.Socket;
 import java.net.SocketTimeoutException;
 
-public class SocketExample {
+/**
+ * Пример создания TCP-соединения и отправки при помощи него сообщения HTTP протокола.
+ * Клиент для удаленной программы.
+ */
+public class ClientSocketExample {
 
     public static void main(String[] args) throws IOException {
         Socket socket = new Socket("java-course.ru", 80);
+        // времяч в течении которого сокет ожидает каких-либо данных
         socket.setSoTimeout(2000);
 
         OutputStream os = socket.getOutputStream();
@@ -25,6 +30,7 @@ public class SocketExample {
             try {
                 line = bufferedReader.readLine();
             } catch (SocketTimeoutException e) {
+                // вызовется, если данные не придут в течении 2-х секунд (указано выше)
                 e.printStackTrace(System.out);
             }
         }
@@ -32,3 +38,4 @@ public class SocketExample {
     }
 
 }
+
