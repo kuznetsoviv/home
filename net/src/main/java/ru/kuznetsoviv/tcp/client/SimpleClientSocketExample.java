@@ -1,4 +1,4 @@
-package ru.kuznetsoviv.client;
+package ru.kuznetsoviv.tcp.client;
 
 import java.io.*;
 import java.net.Socket;
@@ -8,7 +8,7 @@ import java.net.SocketTimeoutException;
  * Пример создания TCP-соединения и отправки при помощи него сообщения HTTP протокола.
  * Клиент для удаленной программы.
  */
-public class ClientSocketExample {
+public class SimpleClientSocketExample {
 
     public static void main(String[] args) throws IOException {
         Socket socket = new Socket("java-course.ru", 80);

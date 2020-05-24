@@ -1,4 +1,4 @@
-package ru.kuznetsoviv.server;
+package ru.kuznetsoviv.tcp.server;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;

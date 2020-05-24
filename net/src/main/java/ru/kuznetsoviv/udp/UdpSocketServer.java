@@ -9,16 +9,21 @@ import java.net.DatagramSocket;
 import java.net.InetAddress;
 import java.util.Date;
 
-public class UdpSocketThread extends Thread {
+public class UdpSocketServer extends Thread {
 
     private DatagramSocket socket;
     private BufferedReader in;
     private boolean moreQuotes = true;
 
-    private UdpSocketThread() throws IOException {
+    public static void main(String[] args) throws IOException {
+        System.setProperty("java.net.preferIPv4Stack", "true");
+        new UdpSocketServer().start();
+    }
+
+    private UdpSocketServer() throws IOException {
         socket = new DatagramSocket(4445);
         try {
-            in = new BufferedReader(new FileReader("one-lines.txt"));
+            in = new BufferedReader(new FileReader(UdpSocketServer.class.getResource("/one-lines.txt").getPath()));
         } catch (FileNotFoundException e) {
             throw new IllegalStateException(e);
         }
@@ -26,12 +31,11 @@ public class UdpSocketThread extends Thread {
 
     @Override
     public void run() {
-        if (moreQuotes) {
+        while (moreQuotes) {
             try {
                 byte[] buf = new byte[256];
                 DatagramPacket packet = new DatagramPacket(buf, buf.length);
                 socket.receive(packet);
-
                 String dString;
                 if (in == null) {
                     dString = new Date().toString();
@@ -66,11 +70,6 @@ public class UdpSocketThread extends Thread {
             returnValue = "IOException occurred in server.";
         }
         return returnValue;
-    }
-
-    public static void main(String[] args) throws IOException {
-        System.setProperty("java.net.preferIPv4Stack", "true");
-        new UdpSocketThread().start();
     }
 
 }

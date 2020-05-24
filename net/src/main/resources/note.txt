@@ -3,6 +3,7 @@ IP - Internet Protocol - используется для взаимодейст�
 TCP - Transmission Control Protocol
     HTTP - SOAP, ReST
     SMTP, FTP, SFTP, SLL/TSL
+
 UDP - User Datagram Protocol
     SNMP - Simple Network Management Protocol (позволяеи опрашивать сетевые ресурсы)
     Video
