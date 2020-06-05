@@ -8,8 +8,6 @@ import org.kie.api.builder.KieBuilder;
 import org.kie.api.builder.KieFileSystem;
 import org.kie.api.builder.KieModule;
 import org.kie.api.builder.KieRepository;
-import org.kie.api.builder.ReleaseId;
-import org.kie.api.io.Resource;
 import org.kie.api.runtime.KieContainer;
 import org.kie.api.runtime.KieSession;
 import org.kie.internal.io.ResourceFactory;
@@ -37,7 +35,7 @@ public class DroolsBeanFactory {
     }
 
     private void getKieRepository() {
-        final KieRepository kieRepository = kieServices.getRepository();
+        KieRepository kieRepository = kieServices.getRepository();
         kieRepository.addKieModule(kieRepository::getDefaultReleaseId);
     }
 
@@ -51,16 +49,6 @@ public class DroolsBeanFactory {
         KieContainer kContainer = kieServices.newKieContainer(kieModule.getReleaseId());
         return kContainer.newKieSession();
 
-    }
-
-    public KieSession getKieSession(Resource dt) {
-        KieFileSystem kieFileSystem = kieServices.newKieFileSystem().write(dt);
-        KieBuilder kieBuilder = kieServices.newKieBuilder(kieFileSystem).buildAll();
-        KieRepository kieRepository = kieServices.getRepository();
-        ReleaseId krDefaultReleaseId = kieRepository.getDefaultReleaseId();
-        KieContainer kieContainer = kieServices.newKieContainer(krDefaultReleaseId);
-        KieSession ksession = kieContainer.newKieSession();
-        return ksession;
     }
 
 }
