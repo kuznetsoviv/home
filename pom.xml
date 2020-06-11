@@ -21,6 +21,7 @@
         <module>gc</module>
         <module>net</module>
         <module>drools</module>
+        <module>kotlin</module>
     </modules>
 
     <build>
