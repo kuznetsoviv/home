@@ -24,5 +24,5 @@ abstract class Animal : Roamable {
     fun sleep() {
         println("Th Animal is sleeping")
     }
-    
+
 }

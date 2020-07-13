@@ -26,6 +26,6 @@ fun testForeach() {
 /**
  * Пример декларации функции.
  */
-fun happyBirthday(name: String, age: Int): String {
+fun happyBirthday(name: String?, age: Int): String {
     return "Happy ${age}th birthday, $name"
 }

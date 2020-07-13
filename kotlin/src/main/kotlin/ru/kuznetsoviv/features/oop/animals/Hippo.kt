@@ -3,7 +3,7 @@ package ru.kuznetsoviv.features.oop.animals
 class Hippo() : Animal() {
 
     // final позволяет запрещать переопределение полей и методов в наследниках
-    final override val image = "hippo.jpg"
+    override val image = "hippo.jpg"
     override val food = "grass"
     override val habitat = "water"
 

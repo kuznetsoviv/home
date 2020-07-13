@@ -29,3 +29,19 @@ fun exampleIsAs(animal: Animal) {
     val wolf = animal as Wolf
     wolf.eat()
 }
+
+/**
+ * Пример использования Элвис оператора.
+ */
+fun exampleElvis() {
+    val test: String? = null
+    println(test ?: "Elvis")
+}
+
+/**
+ * Оператор !! намеренно выдает NullPointerException
+ */
+fun exampleNullPointerException() {
+    val test: String? = null
+    println(test!!.length)
+}
