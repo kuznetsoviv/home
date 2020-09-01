@@ -15,6 +15,9 @@ class Dog(val name: String, weight: Int, breed: String) {
     // Все свойства, определяемые в классе должны инициализироваться
     var breed = "Dog $breed"
 
+    // Пример определения свойства component1
+    operator fun component1(): String = breed
+
     // префикс lateinit позволяет указать свойство без его начальной инициализации
     lateinit var masterName: String
 

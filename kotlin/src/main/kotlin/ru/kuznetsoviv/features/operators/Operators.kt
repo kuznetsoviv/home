@@ -31,6 +31,15 @@ fun exampleIsAs(animal: Animal) {
 }
 
 /**
+ * Оператор as? - приводит к типу, если арумент имеет подходящий тип, иначе возвращает null.
+ */
+fun exampleNotNullAs(animal: Animal) {
+    val wolf = animal as? Wolf
+    wolf?.eat()
+}
+
+
+/**
  * Пример использования Элвис оператора.
  */
 fun exampleElvis() {
@@ -44,4 +53,14 @@ fun exampleElvis() {
 fun exampleNullPointerException() {
     val test: String? = null
     println(test!!.length)
+}
+
+/**
+ * Пример использования проверки в функции Interval.
+ */
+fun setWorkRatePercentage(x: Int): Int {
+    if (x !in 1..100) {
+        throw IllegalArgumentException("Percentage not in range 0..100 $x")
+    }
+    return 2 * x
 }
