@@ -24,6 +24,7 @@
         <module>kotlin</module>
         <module>jaxb</module>
         <module>maven-assembly</module>
+        <module>crypt</module>
     </modules>
 
     <build>
