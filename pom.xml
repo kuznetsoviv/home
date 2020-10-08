@@ -25,6 +25,7 @@
         <module>jaxb</module>
         <module>maven-assembly</module>
         <module>crypt</module>
+        <module>xpath</module>
     </modules>
 
     <build>
