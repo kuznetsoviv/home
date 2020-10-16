@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<Tutorials xmlns="/full_archive">
+<Tutorials xmlns="full_archive">
     <Tutorial tutId="01" type="java">
         <title>Guava</title>
         <description>Introduction to Guava</description>
