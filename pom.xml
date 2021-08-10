@@ -11,19 +11,16 @@
 
     <modules>
         <module>zip-archive</module>
-        <module>date-time</module>
         <module>parallel</module>
         <module>service-locator</module>
         <module>nio</module>
         <module>io</module>
         <module>reflection</module>
-        <module>mxbean</module>
         <module>gc</module>
         <module>net</module>
         <module>drools</module>
         <module>kotlin</module>
         <module>jaxb</module>
-        <module>maven-assembly</module>
         <module>crypt</module>
         <module>xpath</module>
     </modules>

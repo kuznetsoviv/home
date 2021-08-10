@@ -26,7 +26,7 @@ import java.util.concurrent.Future;
  * выполнения задачи и ее результата. Также с помощью него можно отменить выполнение задачи.
  * <p>
  * Все сервисы исполнения задач создаваемые с помощью вспомогательных методов создаются с помощью конструктора ThreadPoolExecutor.
- * Собстенно этот класс и отвечает за выполнение поставляемых задач.
+ * Собственно этот класс и отвечает за выполнение поставляемых задач.
  * Поддерживает задание максимального количества потоков и количество потоков, которые будут созданы при создании его экземпляра.
  * Этот класс можно переопределять для реализации дополнительных обработчиков. Например на создание и удаление потока.
  */
@@ -35,7 +35,7 @@ public class Main {
     public static void main(String[] args) throws ExecutionException, InterruptedException {
         ExecutorService es = Executors.newFixedThreadPool(5);
         Future<Integer> future = es.submit(new MyCallable());
-        // es.execute(new MyInterruptingThread(future));
+        es.execute(new MyInterruptingThread(future));
         Integer result = future.get();
         System.out.println(result);
         System.out.println("Shutdown");
