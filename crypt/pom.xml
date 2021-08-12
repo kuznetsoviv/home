@@ -19,4 +19,24 @@
         </dependency>
     </dependencies>
 
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>ru.kuznetsoviv.javawork</groupId>
+                <artifactId>counter-maven-plugin</artifactId>
+                <version>${project.version}</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>dependency-counter</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <scope>compile</scope>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
 </project>
