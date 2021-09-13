@@ -24,7 +24,8 @@
         <module>crypt</module>
         <module>xpath</module>
         <module>counter-maven-plugin</module>
-      <module>method-handler</module>
+        <module>method-handler</module>
+        <module>aspect</module>
   </modules>
 
     <properties>
@@ -36,6 +37,8 @@
         <maven-project-version>2.2.1</maven-project-version>
         <maven-plugin-plugin-version>3.6.0</maven-plugin-plugin-version>
         <junit-jupiter-engine-version>5.1.0</junit-jupiter-engine-version>
+        <aspectjrt-version>1.9.5</aspectjrt-version>
+        <aspectj-maven-plugin-version>1.7</aspectj-maven-plugin-version>
     </properties>
 
 </project>
